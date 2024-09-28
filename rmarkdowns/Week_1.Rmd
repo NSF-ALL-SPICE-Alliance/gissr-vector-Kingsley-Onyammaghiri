@@ -218,7 +218,9 @@ ggplot() +
 
 ## Map aesthetics
 
-Now let's work on making our map pretty with some colors. Inside our `geom_sf()` parentheses, we can add our own colors to our map. The argument `fill` add color to our polygons, and `color` is the color of our lines. `size` refers to the size of our lines. 
+Now let's work on making our map pretty with some colors. Inside our `geom_sf()` parentheses, we can add our own colors to our map. The argument `fill` add color to our polygons, and `color` is the color of our lines. `size` refers to the size of our lines. ggplot() + 
+  geom_sf(data = world_without_antarctica) +
+    ggtitle("Countries of the World", subtitle = "without Antarctica")
 
 The colors we are using here are what are known as "hex colors", because they are designated with 6 numbers (hexadecimal) after a `#` sign. This is how html (websites) code colors. Use [this site](https://www.color-hex.com/color-names.html) to find more colors and their hex codes. 
 

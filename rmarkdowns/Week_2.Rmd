@@ -151,8 +151,7 @@ rivers50 <- ne_download(
   scale = 50,
   type = "rivers_lake_centerlines",
   category = "physical",
-  returnclass = "sf"
-)
+  returnclass = "sf")
 
 ```
 
